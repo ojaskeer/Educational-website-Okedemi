@@ -59,7 +59,7 @@ button {
     width: calc(33.33% - 3rem); /* Adjusted width using percentage */
     margin: 1.5rem;
     padding: 2rem;
-    background-color: #f9f7e8;
+    background-color: black;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     text-align: center;
@@ -79,13 +79,39 @@ iframe {
     height: 100%;
     border: none;
 }
-.box-background {
+.box1-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: url(/images/jeemainsbox.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1; /* Adjust opacity as needed */
+    border-radius: 1rem; /* Assuming you want rounded corners */
+    
+}
+.box2-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/jeeadvancebox.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1; /* Adjust opacity as needed */
+    border-radius: 1rem; /* Assuming you want rounded corners */
+    
+}
+.box3-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/neetbox.png);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 1; /* Adjust opacity as needed */
@@ -185,18 +211,16 @@ border: 2px solid #34693a;
           
       <div class="dashboard">
         <div class="box" >
-          <div class="box-background" ></div>
+          <div class="box1-background" ></div>
             <iframe id="mains"></iframe>
 
         </div>
         <div class="box">
-            <h2>JEE Advance</h2>
-            <p></p>
+          <div class="box2-background" ></div>
             <iframe id="advance"></iframe>
         </div>
         <div class="box" >
-            <h2>NEET</h2>
-            <p></p>
+          <div class="box3-background"></div>
             <iframe id="neet"></iframe>
         </div>
     </div>
