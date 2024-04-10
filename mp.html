@@ -67,17 +67,7 @@ button {
     transition: transform 0.2s ease-in-out;
     height: 13rem;
     border: 2px solid #34693a;
-}
-
-.box h2 {
-    color: #34693a;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: rgb(62, 117, 62);
-}
-
-.box p {
-    font-size: 1rem;
+    position: relative;
 }
 
 .box:hover {
@@ -89,7 +79,19 @@ iframe {
     height: 100%;
     border: none;
 }
-
+.box-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/jeemainsbox.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1; /* Adjust opacity as needed */
+    border-radius: 1rem; /* Assuming you want rounded corners */
+    
+}
 
 
 /* Media Queries for responsiveness */
@@ -182,10 +184,10 @@ border: 2px solid #34693a;
             <h2 style="line-height: 1rem;" >Learn from the best</h2>
           
       <div class="dashboard">
-        <div class="box">
-            <h2>JEE Mains</h2>
-            <p></p>
+        <div class="box" >
+          <div class="box-background" ></div>
             <iframe id="mains"></iframe>
+
         </div>
         <div class="box">
             <h2>JEE Advance</h2>
