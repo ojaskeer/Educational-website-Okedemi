@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="syllabus.xsl"?>
+<syllabus>
+    <course name="Maths">
+        <subject name="Mains">
+            <topic>Algebra</topic>
+            <topic>Calculus</topic>
+            <topic>Geometry</topic>
+            <topic>Trigonometry</topic>
+            <topic>Probability</topic>
+        </subject>
+        <subject name="Advanced">
+            <topic>Differential Equations</topic>
+            <topic>Vector Calculus</topic>
+            <topic>Complex Analysis</topic>
+            <topic>Linear Algebra</topic>
+            <topic>Real Analysis</topic>
+        </subject>
+    </course>
+    <course name="Biology">
+        <subject name="NEET">
+            <topic>Cell Biology</topic>
+            <topic>Genetics</topic>
+            <topic>Ecology</topic>
+            <topic>Human Physiology</topic>
+            <topic>Biotechnology</topic>
+        </subject>
+    </course>
+    <course name="Chemistry">
+        <subject name="Mains">
+            <topic>Inorganic Chemistry</topic>
+            <topic>Organic Chemistry</topic>
+            <topic>Physical Chemistry</topic>
+            <topic>Chemical Kinetics</topic>
+            <topic>Electrochemistry</topic>
+        </subject>
+        <subject name="Advanced">
+            <topic>Thermodynamics</topic>
+            <topic>Chemical Bonding</topic>
+            <topic>Coordination Compounds</topic>
+            <topic>Organometallic Chemistry</topic>
+            <topic>Solid State Chemistry</topic>
+        </subject>
+        <subject name="NEET">
+            <topic>Biochemistry</topic>
+            <topic>Metallurgy</topic>
+            <topic>Polymers</topic>
+            <topic>Environmental Chemistry</topic>
+            <topic>Nuclear Chemistry</topic>
+        </subject>
+    </course>
+    <course name="Physics">
+        <subject name="Mains">
+            <topic>Mechanics</topic>
+            <topic>Electricity and Magnetism</topic>
+            <topic>Optics</topic>
+            <topic>Modern Physics</topic>
+            <topic>Thermodynamics</topic>
+        </subject>
+        <subject name="Advanced">
+            <topic>Quantum Mechanics</topic>
+            <topic>Electromagnetic Theory</topic>
+            <topic>Statistical Mechanics</topic>
+            <topic>Nuclear Physics</topic>
+            <topic>Particle Physics</topic>
+        </subject>
+        <subject name="NEET">
+            <topic>Biophysics</topic>
+            <topic>Medical Physics</topic>
+            <topic>Geophysics</topic>
+            <topic>Astrophysics</topic>
+            <topic>Fluid Dynamics</topic>
+        </subject>
+    </course>
+</syllabus>
