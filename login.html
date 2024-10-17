@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Okademi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4caf50, #10603b);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 55%;
+            height: 60%;
+            background-color: #f9f7e8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            
+        }
+
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f7e8;
+            color: black;
+            font-size: 2em;
+            text-align: center;
+            border: 2px solid #10603b /* Add this line for the border */
+           
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            background-color: #f9f7e8;
+            border-color: black;
+            border-right: 2px solid #10603b; 
+            border-top: 2px solid #10603b; 
+            border-bottom: 2px solid #10603b; 
+        }
+
+        .right-side h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .right-side form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-side input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .right-side button {
+            padding: 10px;
+            background-color: #10603b;
+            color: #f9f7e8;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .right-side button:hover {
+            background-color: #2e5530;
+        }
+
+        .signup-option {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .signup-option a {
+            color: #10603b;
+            text-decoration: none;
+        }
+
+        .signup-option a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-side">
+            <div>
+                <img src="/images/okedemi_final_logo.jpeg" alt="logo" height="150px" style="margin-top: 40px;">
+                <h4>Okademi</h4>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="login-form">
+                <h3 style="text-align: center; color: #34693a;">Login Form</h3>
+                <form id="loginForm" onsubmit="return validateForm()">
+                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <div id="errorMessage" class="error-message"></div>
+                    <div class="signup-option">
+                        New user? <a href="#">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var password = document.getElementById('password').value;
+            var errorMessage = document.getElementById('errorMessage');
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(email)) {
+                errorMessage.innerHTML = "Please enter a valid email address.";
+                return false;
+            }
+
+            if (!/^\d{10}$/.test(phone)) {
+                errorMessage.innerHTML = "Please enter a 10-digit phone number.";
+                return false;
+            }
+
+            if (password.length < 8) {
+                errorMessage.innerHTML = "Password must be at least 8 characters long.";
+                return false;
+            }
+
+            return true;
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            // Validate form
+            if (validateForm()) {
+                // Redirect to mp.html after successful login
+                window.location.href = "mp.html";
+            }
+        });
+    </script>
+
+</body>
+</html>
