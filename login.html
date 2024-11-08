@@ -104,14 +104,14 @@
     <div class="container">
         <div class="left-side">
             <div>
-                <img src="/images/okedemi_final_logo.jpeg" alt="logo" height="150px" style="margin-top: 40px;">
+                <img src="/Educational-website-Okedemi/images/logo.jpeg" alt="logo" height="150px" style="margin-top: 40px;">
                 <h4>Okademi</h4>
             </div>
         </div>
         <div class="right-side">
             <div class="login-form">
                 <h3 style="text-align: center; color: #34693a;">Login Form</h3>
-                <form id="loginForm" onsubmit="return validateForm()">
+                <form id="loginForm" method="POST" action="login.php" onsubmit="return validateForm()">
                     <input type="email" id="email" name="email" placeholder="Email ID" required>
                     <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
                     <input type="password" id="password" name="password" placeholder="Password" required>
@@ -157,7 +157,7 @@
             // Validate form
             if (validateForm()) {
                 // Redirect to mp.html after successful login
-                window.location.href = "mp.html";
+                window.location.href = "mp.php";
             }
         });
     </script>

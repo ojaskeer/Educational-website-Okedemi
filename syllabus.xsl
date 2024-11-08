@@ -53,7 +53,7 @@
                             <img src="images/okedemi_final_logo.jpeg" alt="logo" style="height: 50px; padding-right: 20px;"></img>
                         </div>
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="mp.html" style="font-family: anton-regular; font-size: xx-large; padding-bottom: 10px;"><b>OKADEMI</b></a>
+                            <a class="navbar-brand" href="mp.php" style="font-family: anton-regular; font-size: xx-large; padding-bottom: 10px;"><b>OKADEMI</b></a>
                         </div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
