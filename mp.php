@@ -240,61 +240,81 @@ padding-bottom: 10px;
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg " style="background-color:  #f9f7e8;border-bottom: 2px solid #34693a;">
-            <div class="container-fluid" >
-              <div class="icon">
-                <img src="images/okedemi_final_logo.jpeg" alt="logo" style="height: 50px; padding-right: 20px;">
-              </div>
-              <div class="navbar-header">
-              <a class="navbar-brand" href="mp.php" style="font-family: anton-regular; font-size: xx-large; padding-bottom: 10px; "><b>OKADEMI</b></a>
-            </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 15px;">
-                      <b>Study Materials</b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="syllabus.xml#Maths">Maths</a></li>
-                      <li><a class="dropdown-item" href="syllabus.xml#Physics">physics</a></li>
-                      <li><a class="dropdown-item" href="syllabus.xml#Chemistry">chemistry</a></li>
-                      <li><a class="dropdown-item" href="syllabus.xml#Biology">biology</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 15px;">
-                     <b> Paid Courses</b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="courses.html#mains">Mains</a></li>
-                      <li><a class="dropdown-item" href="courses.html#advanced">Advanced</a></li>
-                      <li><a class="dropdown-item" href="courses.html#neet">Neet</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.facebook.com/"><img src="/Educational-website-Okedemi/images/Facebook_Logo_(2019).png.webp" style="height: 40px; padding-left: 55px;padding-bottom: 5px;"></a>
-                    </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="https://www.youtube.com/"><img src="/Educational-website-Okedemi/images/ytlogo.png" style="height: 50px; padding-left: 20px;padding-bottom: 10px;"></a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="https://www.instagram.com/?hl=en"><img src="images/instalogo.jpg" style="height: 40px; padding-left: 20px;padding-bottom: 5px;"></a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="www.twitter.com/x"><img src="images/Xlogo.png" style="height: 40px; padding-left: 20px;padding-bottom: 5px;"></a>
-                  </li>
-                              
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" style="border-width: 2px;"><b>Search</b></button>
-                </form>
-              </div>
-            </div>
-          </nav>
+<nav class="navbar navbar-expand-lg" style="background-color:  #f9f7e8;border-bottom: 2px solid #34693a;">
+  <div class="container-fluid">
+    <div class="icon">
+      <img src="images/okedemi_final_logo.jpeg" alt="logo" style="height: 50px; padding-right: 20px;">
+    </div>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="mp.php" style="font-family: anton-regular; font-size: xx-large; padding-bottom: 10px;">
+        <b>OKADEMI</b>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            style="padding-top: 15px;">
+            <b>Study Materials</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="syllabus.html#Maths">Maths</a></li>
+            <li><a class="dropdown-item" href="syllabus.html#Physics">Physics</a></li>
+            <li><a class="dropdown-item" href="syllabus.html#Chemistry">Chemistry</a></li>
+            <li><a class="dropdown-item" href="syllabus.html#Biology">Biology</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            style="padding-top: 15px;">
+            <b>Paid Courses</b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="courses.php#mains">Mains</a></li>
+            <li><a class="dropdown-item" href="courses.php#advanced">Advanced</a></li>
+            <li><a class="dropdown-item" href="courses.php#neet">Neet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_courses.php" style="padding-top: 15px;"><b>My Courses</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/"><img src="/Educational-website-Okedemi/images/Facebook_Logo_(2019).png.webp" style="height: 40px; padding-left: 15px;padding-bottom: 5px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/"><img src="/Educational-website-Okedemi/images/ytlogo.png" style="height: 50px; padding-left: 20px;padding-bottom: 10px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/?hl=en"><img src="images/instalogo.jpg" style="height: 40px; padding-left: 20px;padding-bottom: 5px;"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="www.twitter.com/x"><img src="images/Xlogo.png" style="height: 40px; padding-left: 20px;padding-bottom: 5px;"></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search" onsubmit="searchFunction(); return false;">
+        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="border-width: 2px;"><b>Search</b></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function searchFunction() {
+    const query = document.getElementById("searchInput").value;
+    if (query) {
+      // Perform search logic or redirect to a search results page
+      alert("Search query: " + query);
+      // Example redirect (update the URL as needed):
+      // window.location.href = "search_results.php?query=" + encodeURIComponent(query);
+    }
+  }
+</script>
+
           <main>
           <h2 id="welcome-message" style="line-height: 1rem;">
             Welcome, <?php echo htmlspecialchars($_SESSION['name']); ?>!
@@ -308,19 +328,19 @@ padding-bottom: 10px;
           
       <div class="dashboard">
         <div class="box" >
-          <a href="courses.html#mains" >
+          <a href="courses.php#mains" >
           <div class="box1-background" ></div>
             <iframe id="mains"></iframe>
           </a>
         </div>
         <div class="box">
-          <a href="courses.html#advanced">
+          <a href="courses.php#advanced">
           <div class="box2-background" ></div>
             <iframe id="advance"></iframe>
           </a>
         </div>
         <div class="box" >
-          <a href="courses.html#neet">
+          <a href="courses.php#neet">
           <div class="box3-background"></div>
             <iframe id="neet"></iframe>
           </a>
@@ -337,8 +357,8 @@ padding-bottom: 10px;
           <b>Prof. Ankit Bansal</b><br>
           <b>Prof. Nandini Gawlekar</b></p>
           <b>Syllabus:</b><br><br>
-          <a href="syllabus.xml#Maths" style="color: #000;"><b> Mains </b></a><br>
-          <a href="syllabus.xml#Maths" style="color: #000;"><b> Advanced </b></a><br>
+          <a href="syllabus.html#Maths" style="color: #000;"><b> Mains </b></a><br>
+          <a href="syllabus.html#Maths" style="color: #000;"><b> Advanced </b></a><br>
           
         </div>
       </div>
@@ -350,7 +370,7 @@ padding-bottom: 10px;
           <b>Prof. Gaurav Rathi</b><br>
           <b>Prof. Neha Khandelwal</b></p>
           <b>Syllabus:</b><br><br>
-          <a href="syllabus.xml#Biology" style="color: #000;"><b>Neet </b></a>
+          <a href="syllabus.html#Biology" style="color: #000;"><b>Neet </b></a>
         </div>
       </div>
       <div class="partition" style=" border-right: 2px solid #000000;">
@@ -361,9 +381,9 @@ padding-bottom: 10px;
           <b>Prof. Pragati Randad</b><br>
           <b>Prof. Lata Shah</b></p>
           <b>Syllabus:</b><br><br>
-          <a href="syllabus.xml#Chemistry" style="color: #000;"><b> Mains </b></a><br>
-          <a href="syllabus.xml#Chemistry" style="color: #000;"><b> Advanced </b></a><br>
-          <a href="syllabus.xml#Chemistry" style="color: #000;"><b>Neet </b></a>
+          <a href="syllabus.html#Chemistry" style="color: #000;"><b> Mains </b></a><br>
+          <a href="syllabus.html#Chemistry" style="color: #000;"><b> Advanced </b></a><br>
+          <a href="syllabus.html#Chemistry" style="color: #000;"><b>Neet </b></a>
         </div>
       </div>
       <div class="partition" >
@@ -374,9 +394,9 @@ padding-bottom: 10px;
           <b>Prof. Pankaj Joshi</b><br>
           <b>Prof. Vikas Gupta</b></p>
           <b>Syllabus:</b><br><br>
-          <a href="syllabus.xml#Physics" style="color: #000;"><b> Mains </b></a><br>
-          <a href="syllabus.xml#Physics" style="color: #000;"><b> Advanced </b></a><br>
-          <a href="syllabus.xml#Physics" style="color: #000;"><b>Neet </b></a>
+          <a href="syllabus.html#Physics" style="color: #000;"><b> Mains </b></a><br>
+          <a href="syllabus.html#Physics" style="color: #000;"><b> Advanced </b></a><br>
+          <a href="syllabus.html#Physics" style="color: #000;"><b>Neet </b></a>
         </div>
       </div>
     </div>
