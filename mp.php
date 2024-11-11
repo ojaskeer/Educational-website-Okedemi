@@ -1,7 +1,7 @@
 <?php
-// Start session to access session variables
-session_start();
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -280,7 +280,7 @@ padding-bottom: 10px;
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="my_courses.php" style="padding-top: 15px;"><b>My Courses</b></a>
+          <a class="nav-link" href="mycourse.php" style="padding-top: 15px;"><b>My Courses</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.facebook.com/"><img src="/Educational-website-Okedemi/images/Facebook_Logo_(2019).png.webp" style="height: 40px; padding-left: 15px;padding-bottom: 5px;"></a>
@@ -303,29 +303,18 @@ padding-bottom: 10px;
   </div>
 </nav>
 
-<script>
-  function searchFunction() {
-    const query = document.getElementById("searchInput").value;
-    if (query) {
-      // Perform search logic or redirect to a search results page
-      alert("Search query: " + query);
-      // Example redirect (update the URL as needed):
-      // window.location.href = "search_results.php?query=" + encodeURIComponent(query);
-    }
-  }
-</script>
 
-          <main>
-          <h2 id="welcome-message" style="line-height: 1rem;">
-            Welcome, <?php echo htmlspecialchars($_SESSION['name']); ?>!
-        </h2>
+<main>
+    <h2 id="welcome-message" style="line-height: 1rem;">
+        Welcome, <?php echo isset($_COOKIE['name']) ? htmlspecialchars($_COOKIE['name']) : 'User'; ?>!
+    </h2>
 
-        <script>
-            var name = "<?php echo isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : 'User'; ?>";
-            document.getElementById('welcome-message').innerText = `Welcome, ${name}!`;
-        </script>
+    <script>
+        var name = "<?php echo isset($_COOKIE['name']) ? htmlspecialchars($_COOKIE['name']) : 'User'; ?>";
+        document.getElementById('welcome-message').innerText = `Welcome, ${name}!`;
+    </script>
 
-          
+</main> 
       <div class="dashboard">
         <div class="box" >
           <a href="courses.php#mains" >

@@ -100,7 +100,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="left-side">
             <div>
@@ -148,19 +147,8 @@
                 return false;
             }
 
-            return true;
+            return true; // Allow the form to submit if validation passes
         }
-
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();  // Prevent the default form submission
-
-            // Validate form
-            if (validateForm()) {
-                // Redirect to mp.html after successful login
-                window.location.href = "mp.php";
-            }
-        });
     </script>
-
 </body>
 </html>
