@@ -160,7 +160,7 @@ $conn = null;
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mycourses.php" style="padding-top: 15px;"><b>My Courses</b></a>
+          <a class="nav-link" href="mycourse.php" style="padding-top: 15px;"><b>My Courses</b></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.facebook.com/"><img src="/Educational-website-Okedemi/images/Facebook_Logo_(2019).png.webp" style="height: 40px; padding-left: 15px;padding-bottom: 5px;"></a>
@@ -235,5 +235,6 @@ $conn = null;
 </main>
 
 <?php $conn = null; ?>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

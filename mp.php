@@ -236,6 +236,11 @@ padding-bottom: 10px;
             margin-top: 5px;
         }
 
+        .highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
     </style>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -296,13 +301,46 @@ padding-bottom: 10px;
         </li>
       </ul>
       <form class="d-flex" role="search" onsubmit="searchFunction(); return false;">
-        <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit" style="border-width: 2px;"><b>Search</b></button>
-      </form>
+  <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit" style="border-width: 2px;"><b>Search</b></button>
+</form>
     </div>
   </div>
 </nav>
 
+<script>
+  function searchFunction() {
+    // Clear previous highlights
+    removeHighlights();
+    
+    // Get the search query
+    const query = document.getElementById("searchInput").value.trim().toLowerCase();
+    
+    if (query) {
+      // Get all text-containing elements on the page (e.g., paragraphs, headings)
+      const textElements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, li");
+      
+      textElements.forEach(element => {
+        const innerText = element.innerHTML;
+        const regex = new RegExp(`(${query})`, 'gi'); // Regular expression for global, case-insensitive match
+        const highlightedText = innerText.replace(regex, '<span class="highlight">$1</span>');
+        
+        element.innerHTML = highlightedText;
+      });
+    } else {
+      alert("Please enter a search term.");
+    }
+  }
+
+  function removeHighlights() {
+    // Remove all highlights by replacing <span class="highlight"> with plain text
+    document.querySelectorAll(".highlight").forEach(highlight => {
+      const parent = highlight.parentNode;
+      parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+      parent.normalize(); // Normalize text nodes to merge any adjacent text nodes
+    });
+  }
+</script>
 
 <main>
     <h2 id="welcome-message" style="line-height: 1rem;">
